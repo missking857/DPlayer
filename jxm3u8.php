@@ -19,7 +19,7 @@ $pic = isset($_GET['pic']) ? $_GET['pic'] : '';
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> <!--  苹果全屏应用模式 -->
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
-    <link rel="stylesheet" href="/static/DPlayer/css.css"/>
+    <link rel="stylesheet" href="/css.css"/>
     <style>
         body, html {
             width: 100%;
@@ -83,8 +83,8 @@ $pic = isset($_GET['pic']) ? $_GET['pic'] : '';
     <button class="modal-button" id="startNewButton">从头开始播放</button>
 </div>
 
-<script src="/static/DPlayer/hls.min.js"></script>
-<script src="/static/DPlayer/DPlayer.min.js"></script>
+<script src="/hls.min.js"></script>
+<script src="/DPlayer.min.js"></script>
 <script type="text/javascript">
     var pic = '<?= htmlspecialchars($pic) ?>'; 
     var url = '<?= htmlspecialchars($url) ?>'; 
